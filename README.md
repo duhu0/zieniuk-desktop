@@ -35,6 +35,3 @@ git clone https://github.com/twojanazwa/zieniuk-desktop.git
 cd zieniuk-desktop
 npm install
 npm start
-```
-Lub
-Pobierz .exe
