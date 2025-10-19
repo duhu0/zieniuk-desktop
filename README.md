@@ -36,5 +36,5 @@ cd zieniuk-desktop
 npm install
 npm start
 ```
-# or
-### Pobierz .exe
+Lub
+Pobierz .exe
