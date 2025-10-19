@@ -1,0 +1,32 @@
+{
+  "name": "zieniuk-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Zieniuk",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable",
+    "postinstall": "electron-rebuild"
+  },
+  "build": {
+    "appId": "com.zieniuk.desktop",
+    "productName": "Zieniuk Desktop",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    }
+  },
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.1",
+    "electron": "^38.3.0",
+    "electron-builder": "^24.6.4",
+    "electron-rebuild": "^3.2.9"
+  },
+  "author": "Duhu",
+  "license": "MIT"
+}

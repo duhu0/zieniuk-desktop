@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zieniuk Desktop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: transparent;
+            overflow: hidden;
+            user-select: none;
+            -webkit-app-region: no-drag;
+        }
+
+        .character {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            z-index: 1000;
+            -webkit-app-region: no-drag;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+            transition: transform 0.15s ease;
+        }
+
+        .character img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
+        .character.dragging {
+            cursor: grabbing;
+        }
+
+        .character.walking {
+            transition: left 0.5s linear, top 0.5s linear;
+        }
+
+        .character.evil {
+            animation: evil-laugh 0.3s ease infinite;
+        }
+
+        @keyframes evil-laugh {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="character" class="character">
+        <img id="character-img" src="zieniuk.png" alt="zieniuk" draggable="false">
+    </div>
+
+    <audio id="click-sound" src="zieniuk.mp3" preload="auto"></audio>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
