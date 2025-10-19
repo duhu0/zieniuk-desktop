@@ -1,17 +1,17 @@
 # 🧟‍♂️ Zieniuk Desktop
 
-**Zieniuk Desktop** to zabawny, pikselowy towarzysz pulpitu zbudowany przy użyciu Electron. Łazi po ekranie, reaguje na kliknięcia i potrafi przejąć myszkę, żeby trochę Cię postraszyć 😈
+**Zieniuk Desktop** to zabawny, pikselowy towarzysz pulpitu zbudowany przy użyciu Electron. Łazi po ekranie, reaguje na kliknięcia i potrafi przejąć myszkę, żeby trochę Cię postraszyć
 
 ![screen](zieniuk.png)
 
 ## 🎮 Funkcje
 
 - 🚶‍♂️ Zieniuk chodzi losowo po ekranie
-- 👆 Kliknij go – "zhackuje" Twoją myszkę na parę sekund
+- 👆 Kliknij go – Ukradnie ci Twoją myszkę na parę sekund
 - 🔊 Efekty dźwiękowe przy kliknięciu
 - 🖱️ Można go przeciągać myszką
 - 👻 Przezroczyste, bezramkowe okno zawsze na wierzchu
-- ⚡ Lekki, zabawny i wkurzający (ale w dobrym sensie)
+- ⚡ Lekki, zabawny i wkurzający
 
 ## 🔧 Technologie
 
@@ -37,5 +37,4 @@ npm install
 npm start
 ```
 # or
-```bash
-pobierz .exe
+### Pobierz .exe
